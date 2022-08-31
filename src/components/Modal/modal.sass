@@ -1,0 +1,45 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+
+.modalBackdrop
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.5)
+    z-index: -1
+    display: grid
+    place-items: center
+
+.modalTrigger
+    font-size: 16px
+    margin-top: 8px
+
+.modalContainer
+    background: #fff
+    border-radius: 10px
+    min-width: 300px
+    min-height: 300px
+    padding: 20px
+    position: relative
+
+.modalCloseBtn
+    background: none!important
+    position: absolute
+    top: 10px
+    right: 10px
+
+.modalHeader
+    text-align: center
+
+.modalHeaderDivider
+    border: none
+    height: 1px
+    background: var(--secondaryColor)
+    border-radius: 10px
+    margin: 4px 0 12px

@@ -1,0 +1,54 @@
+:root
+  --textColor: #333
+  --contrastText: #eee
+  --bgColor: #0b0617
+  --bgColor2: #525174
+  --primaryColor: #c5fe60
+  --secondaryColor: #231f2e
+  --tertiaryColor: #7c7786
+  --error: #ff0000
+
+  --fontFamily: 'Lato', sans-serif
+
+html *
+  box-sizing: border-box
+  font-family: var(--fontFamily)
+  color: var(--textColor)
+  margin: 0
+  padding: 0
+
+.App
+  background: var(--bgColor)
+  z-index: -1
+  position: fixed
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  max-width: 100vw
+  max-height: 100vh
+
+.background
+  position: fixed
+  top: 0
+  mix-blend-mode: screen
+  width: 100%
+  height: 100%
+  z-index: -1
+  background-image: url("https://sweetsoul.sirv.com/Projects/oriental-tiles.png")
+  opacity: .1
+
+.formControl
+  width: 150px
+  border-radius: 5px
+  padding: 12px 8px
+  border: 1px solid var(--bgColor)
+  &::placeholder
+    color: #000
+    font-weight: 600
+  &.invalid
+    border-color: var(--error)
+
+.invalidHelper
+  font-size: 15px
+  color: var(--error)
+  margin-bottom: 8px
